@@ -16,7 +16,7 @@ def create_database():
 	# calls the create table function
 	create_table(db_name, "database", sql)
 
-# the function enables to create a table which will pass the name of the database "db_name", name of the table "table_name" and the sql to execute "sql"
+# the function enables to create a table which will pass the name of the database, the table and the sql 
 def create_table(db_name, table_name, sql):
 
 	# opens, runs, queries, closes the database
