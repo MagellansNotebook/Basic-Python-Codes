@@ -8,7 +8,7 @@ import threading
 # socket.SOCK_STREAM means it is using a TCP connection
 server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
-# binds an IP to a port connection. It also creates a tuple.
+# binds an IP to a port connection which creates a tuple.
 server_sock.bind(('0.0.0.0', 10000))
 
 # listens to any connections to the server
