@@ -96,7 +96,7 @@ def edit_data(data):
 		cursor = db.cursor()
 
 		# update the Product table
-		sql = "update database set Name=?, Price=? where ProductID=?"
+		sql = "UPDATE database SET Name=?, Price=? WHERE ProductID=?"
 
 		# runs the sql statement and passed in the data
 		cursor.execute(sql, data)
