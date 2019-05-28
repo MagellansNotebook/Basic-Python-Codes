@@ -265,7 +265,7 @@ def main():
 				products = select_product(name)
 
 				# indents the title into proper spacing
-				print("{0:<10}{1:<15}{2:<1}\n".format("Serial", "Product Name", "Value"))
+				print("\n{0:<10}{1:<15}{2:<1}\n".format("Serial", "Product Name", "Value"))
 
 				# a list was created to prevent a TypeError from occuring
 				products_list = []
