@@ -253,29 +253,35 @@ def main():
 					print("{0:<10}{1:<15}{2:<1}".format(i[0], i[1], i[2]))
 
 			elif selection_opt == 6:
-				print("\nDisplay Product\n")
-
-				# prompts the user to enter the serial number of the product
-				name = input('Enter the product Name to search: ')
-
-				# reassigns the first letter of the name variable into upper case
-				name = name[0].upper() + name[1:]
-
-				# assigns the value of name and calls the select_product function
-				products = select_product(name)
-
-				# indents the title into proper spacing
-				print("\n{0:<10}{1:<15}{2:<1}\n".format("Serial", "Product Name", "Value"))
-
-				# a list was created to prevent a TypeError from occuring
-				products_list = []
-
-				# unpacks the tuple variables and add them to the products_list list
-				for i in products:
-					products_list.append(i)
 				
-				# displays the variable
-				print("{0:<10}{1:<15}{2:<1}".format(products_list[0], products_list[1], products_list[2]))
+				try:
+					print("\nDisplay Product\n")
+
+					# prompts the user to enter the serial number of the product
+					name = input('Enter the product Name to search: ')
+
+					# reassigns the first letter of the name variable into upper case
+					name = name[0].upper() + name[1:]
+
+					# assigns the value of name and calls the select_product function
+					products = select_product(name)
+
+					# indents the title into proper spacing
+					print("\n{0:<10}{1:<15}{2:<1}\n".format("Serial", "Product Name", "Value"))
+
+					# a list was created to prevent a TypeError from occuring
+					products_list = []
+
+					# unpacks the tuple variables and add them to the products_list list
+					for i in products:
+						products_list.append(i)
+
+					# displays the variable
+					print("{0:<10}{1:<15}{2:<1}".format(products_list[0], products_list[1], products_list[2]))
+				
+				# when a product is not found in the database
+				except TypeError:
+					print('Product not found')
 
 			elif selection_opt == 0:
 				print("\nExiting program...\n")
