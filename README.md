@@ -13,3 +13,7 @@ Ref: https://pythonschool.net/databases/creating-the-data-model/ - Published on 
 **Simple Hash** provides a simple hash encryption to a word or group of words.
 
 Ref: https://docs.python.org/3/library/hashlib.html - Published on 30 May 2019
+
+**Simple Web Server** displays a simple hello world page when accessed by a browser.
+
+Ref: https://ruslanspivak.com/lsbaws-part1/ - 09 March 2015
