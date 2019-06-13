@@ -14,6 +14,6 @@ Ref: https://pythonschool.net/databases/creating-the-data-model/ - Published on 
 
 Ref: https://docs.python.org/3/library/hashlib.html - Published on 30 May 2019
 
-**Simple Web Server** displays a simple hello world page when accessed by a browser. To access the page simply type _http://localhost:8888_
+**Simple Web Server** displays a simple hello world page when accessed by a browser. To access the page simply type _http://localhost:8888_ once the server is running.
 
 Ref: https://ruslanspivak.com/lsbaws-part1/ - Published on 09 March 2015
